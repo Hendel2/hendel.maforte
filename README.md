@@ -9,7 +9,7 @@ Portifolio/
 ├── index.html                      # Página única com todas as seções
 ├── styles.css                      # Estilos (tema escuro) + responsivo
 ├── script.js                       # Menu mobile, navbar e fade das seções
-└── Curriculo_HendelMaforte_TI.pdf  # Baixado pelo botão do hero
+└── favicon.svg                     # Ícone da aba
 ```
 
 ## Como abrir
