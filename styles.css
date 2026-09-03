@@ -233,7 +233,11 @@ code { font-family: var(--ff-mono); font-size: .9em; }
   z-index: 0;
 }
 .hero__inner { position: relative; z-index: 1; }
-.hero__text { max-width: 720px; }
+.hero__text {
+  max-width: 780px;
+  margin-inline: auto;
+  text-align: center;
+}
 
 .hero__eyebrow {
   display: inline-flex;
@@ -241,6 +245,7 @@ code { font-family: var(--ff-mono); font-size: .9em; }
   gap: .5rem;
   padding: .35rem .85rem .35rem .6rem;
   margin-bottom: 1.4rem;
+  text-align: left;
   border-radius: 999px;
   font-size: .82rem;
   font-weight: 500;
@@ -251,6 +256,7 @@ code { font-family: var(--ff-mono); font-size: .9em; }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-2); }
 
 .hero__title {
+  text-wrap: balance;
   font-size: clamp(2.2rem, 5.2vw, 3.6rem);
   font-weight: 800;
   line-height: 1.1;
@@ -272,16 +278,24 @@ code { font-family: var(--ff-mono); font-size: .9em; }
 }
 
 .hero__desc {
-  max-width: 56ch;
+  max-width: 58ch;
+  margin-inline: auto;
   color: var(--text-dim);
   font-size: 1.02rem;
   margin-bottom: 2rem;
+  text-wrap: pretty;
 }
 .hero__desc strong { color: var(--text); font-weight: 600; }
 
-.hero__actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2.2rem; }
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .8rem;
+  margin-bottom: 2.2rem;
+}
 
-.hero__social { display: flex; gap: .7rem; }
+.hero__social { display: flex; justify-content: center; gap: .7rem; }
 .hero__social a {
   width: 44px; height: 44px;
   display: grid; place-items: center;
