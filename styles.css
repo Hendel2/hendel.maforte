@@ -732,7 +732,7 @@ h1, h2, h3, h4 { font-family: var(--ff-head); line-height: 1.22; }
 }
 
 /* ---------- Projetos ---------- */
-.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.4rem; }
+.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
 .project {
   position: relative;
   isolation: isolate;
@@ -1055,6 +1055,7 @@ h1, h2, h3, h4 { font-family: var(--ff-head); line-height: 1.22; }
    RESPONSIVO
    ========================================================= */
 @media (max-width: 960px) {
+  .projects { grid-template-columns: 1fr; }
   .about { grid-template-columns: 1fr; gap: 2.2rem; }
   .skills { grid-template-columns: 1fr; }
   .edu { grid-template-columns: 1fr; gap: 2.4rem; }
